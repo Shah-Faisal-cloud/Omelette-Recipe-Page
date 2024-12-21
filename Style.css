@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    background-color: hsl(30, 54%, 90%);
+    position: relative;
+    font-size: 16px;
+}
+
+.main-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 5% auto;
+    padding: 3%;
+    font-family: 'Outfit';
+    color: rgb(61, 53, 53);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-weight: lighter;
+    color: black;
+}
+
+p {
+    font-family: 'Outfit';
+    font-weight: normal;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+span, .value {
+    font-weight: bold;
+}
+
+.preparation ul li, .ingredients ul li {
+    margin: 2% 0 1% 0;
+}
+
+h2 {
+    font-family: 'Young Serif';
+    font-weight: lighter;
+    color: hsl(14, 45%, 36%);
+}
+
+hr {
+    width: 100%;
+    opacity: 0.4;
+}
+
+::marker, .value {
+    color: hsl(14, 45%, 36%);
+}
+
+::marker {
+    padding-right: 10px;
+}
+
+.instructions, p {
+    line-height: 160%;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table td {
+    padding: 3% 6%;
+    text-align: left;
+    border-bottom: 1px solid rgb(212, 201, 201);
+}
+
+.nutrition-table tr:last-child td{
+    border-bottom: none;
+}
+
+.value {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    body{
+        font-size: 14px;
+    }
+    .main-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 481px) and (min-width: 375px){
+    body{
+        font-size: 12px;
+    }
+    .main-container {
+        width: 100%;
+        position: static;
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .main-container img {
+        border-radius: 0;
+    }
+
+    h1, p, .preparation, .ingredients, .instructions, .nutrition, hr {
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+
+    hr {
+        width: 90%;
+    }
+
+    .ingredients li, .instructions li {
+        margin-left: 0;
+    }
+}
