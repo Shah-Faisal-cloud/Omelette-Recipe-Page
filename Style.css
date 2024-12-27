@@ -110,7 +110,7 @@ hr {
         width: 70%;
     }
 }
-@media screen and (max-width: 481px) and (min-width: 300px){
+@media screen and (max-width: 481px) and (min-width: 200px){
     body{
         font-size: 12px;
     }
